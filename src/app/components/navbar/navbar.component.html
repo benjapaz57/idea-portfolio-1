@@ -1,20 +1,20 @@
-<nav class="navbar navbar-expand-lg bg-tertiary navbar-idea">
+<nav class="navbar navbar-expand-lg bg-tertiary navbar-idea p-3">
     <div class="container-fluid d-flex ">
-      <a class="navbar-brand text-danger-emphasis my-2" href="#">Navbar</a>
+      <a class="navbar-brand my-2 text-white fw-bold fs-1" href="#">NoName</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 fw-semibold fs-5">
           <li class="nav-item justify-content-center">
-            <a class="nav-link text-light me-4" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link text-light me-4" aria-current="page" href="index.html">{{"nav.home" | translate}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light me-4" href="#">Contacto</a>
+            <a class="nav-link text-light me-4" href="#">{{"nav.contact" | translate}}</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Proyectos
+              {{"nav.projects" | translate}}
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Landing Page</a></li>
@@ -22,6 +22,22 @@
               <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Tiendas</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Sistemas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                <path d="M3.6 9h16.8" />
+                <path d="M3.6 15h16.8" />
+                <path d="M11.5 3a17 17 0 0 0 0 18" />
+                <path d="M12.5 3a17 17 0 0 1 0 18" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" (click)="changeLanguage('es')">Español</button></li>
+              <li><button class="dropdown-item" (click)="changeLanguage('en')">English</button></li>
             </ul>
           </li>
         </ul>

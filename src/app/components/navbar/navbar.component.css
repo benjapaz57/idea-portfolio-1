@@ -1,5 +1,6 @@
-.navbar-idea{
-    background-color: rgb(69, 103, 70);
+.navbar-idea {
+  /* background-color: rgb(69, 103, 70); */
+  background: linear-gradient(to bottom, #4f772d, #396433, #265826);
 }
 
 /* asd buttons hover */
@@ -21,7 +22,6 @@
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
-/* 7 */
 .btn-7 {
     background: linear-gradient(0deg, rgba(32,223,32,0.67) 0%, rgb(69, 103, 70) 100%);
       line-height: 42px;
@@ -93,4 +93,4 @@
     }
     .btn-7 span:hover:after {
       width: 100%;
-    }
+    } 

@@ -1,0 +1,13 @@
+{
+    "nav": {
+        "home": "Home",
+        "contact": "Contact",
+        "projects": "Projects"
+    },
+    "header": {
+        "title": "We help startups launch and grow their products"
+    },
+    "team": {
+        "title": "Our team"
+    }
+}
