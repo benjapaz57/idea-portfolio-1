@@ -3,5 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+:root{
+    --color-1: #BEED80;
+    --color-2: #59D999;
+    --color-3: #31ADA1;
+    --color-4: #51647A;
+    --color-5: #1C232E;
 }
