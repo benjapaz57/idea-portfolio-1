@@ -1,6 +1,7 @@
 .navbar-idea {
   /* background-color: rgb(69, 103, 70); */
-  background: linear-gradient(to bottom, #4f772d, #396433, #265826);
+  background: linear-gradient(to bottom right, var(--color-3)10%, var(--color-2)50%, var(--color-1))40%;
+  color: var(--color-5);
 }
 
 /* asd buttons hover */

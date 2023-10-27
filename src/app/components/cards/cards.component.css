@@ -26,8 +26,9 @@
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px var(--color-5);
 }
+/* TODO: el box shadow esta bien pero se ven los 4 lados. la idea de la sombra es que se vea solo en 2.. pienso siempre que esta bueno tirarlo para la derecha y para abajo. Soy Benja, a modo de critica */
 
 .cardContent {
   position: absolute;
@@ -37,7 +38,7 @@
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: var(--color-4);
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -61,7 +62,7 @@
 .cardDescription {
   margin: 10px 0 0;
   font-size: 14px;
-  color: #777;
+  color: white;
   line-height: 1.4;
 }
 
@@ -76,5 +77,5 @@
 }
 
 .titulos-cartas{
-  color: var(--color-3);
+  color: var(--color-2);
 }
