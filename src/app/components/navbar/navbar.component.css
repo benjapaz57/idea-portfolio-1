@@ -4,94 +4,92 @@
   color: var(--color-5);
 }
 
-/* asd buttons hover */
-.custom-btn {
-    margin: 10px;
-    width: 130px;
-    height: 40px;
-    color: whitesmoke;
-    border-radius: 5px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
-.btn-7 {
-    background: linear-gradient(0deg, rgba(32,223,32,0.67) 0%, rgb(69, 103, 70) 100%);
-      line-height: 42px;
-      padding: 0;
-      border: none;
-    }
-    .btn-7 span {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .btn-7:before,
-    .btn-7:after {
-      position: absolute;
-      content: "";
-      right: 0;
-      bottom: 0;
-      background: rgba(32,223,32,0.67);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    }
-    .btn-7:before{
-       height: 0%;
-       width: 2px;
-    }
-    .btn-7:after {
-      width: 0%;
-      height: 2px;
-    }
-    .btn-7:hover{
-      color: rgba(32,223,32,0.67);
-      background: transparent;
-    }
-    .btn-7:hover:before {
-      height: 100%;
-    }
-    .btn-7:hover:after {
-      width: 100%;
-    }
-    .btn-7 span:before,
-    .btn-7 span:after {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      background: rgb(69, 103, 70);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
-    }
-    .btn-7 span:before {
-      width: 2px;
-      height: 0%;
-    }
-    .btn-7 span:after {
-      height: 2px;
-      width: 0%;
-    }
-    .btn-7 span:hover:before {
-      height: 100%;
-    }
-    .btn-7 span:hover:after {
-      width: 100%;
-    } 
+.fondo-menu{
+  background-color: var(--color-5);
+}
+.reveal-text:hover{
+  background-color: (var(--color-5));
+}
+.letras-menu:hover{
+  background-color: var(--color-5);
+}
+
+/* test */
+
+:root {
+	--delay: 0;
+	--duration: 800ms;
+	--iterations: 1;
+}
+/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+
+.reveal-text,
+.reveal-text::after {
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.reveal-text {
+	--animation-delay: var(--delay, 0);
+	--animation-duration: var(--duration, 800ms);
+	--animation-iterations: var(--iterations, 1);
+	position: relative;
+	font-size: 20px;
+	animation-name: clip-text;
+	color: var(--color-1);
+	white-space: nowrap;
+	cursor: pointer;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #f2f98b;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		pointer-events: none;
+		animation-name: text-revealer;
+	}
+	
+}
+
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+
+@keyframes text-revealer {
+	
+	0%, 50% {
+		transform-origin: 0 50%;
+	}
+	
+	60%, 100% {
+		transform-origin: 100% 50%;		
+	}
+
+	
+	60% {
+		transform: scaleX(1);
+	}
+	
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+/* termina test */

@@ -16,12 +16,10 @@
             <a class="nav-link dropdown-toggle me-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{"nav.projects" | translate}}
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Landing Page</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Tiendas/Stores</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item my-2 custom-btn btn-7" href="#">Sistemas</a></li>
+            <ul class="dropdown-menu fondo-menu">
+              <li><a class="dropdown-item my-2 letras-menu reveal-text" href="#">Landing Page</a></li>
+              <li><a class="dropdown-item my-2 letras-menu reveal-text" href="#">Tiendas/Stores</a></li>
+              <li><a class="dropdown-item my-2 letras-menu reveal-text" href="#">Sistemas</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -35,9 +33,9 @@
                 <path d="M12.5 3a17 17 0 0 1 0 18" />
               </svg>
             </a>
-            <ul class="dropdown-menu">
-              <li><button class="dropdown-item" (click)="changeLanguage('es')">Español</button></li>
-              <li><button class="dropdown-item" (click)="changeLanguage('en')">English</button></li>
+            <ul class="dropdown-menu fondo-menu letras-menu">
+              <li><button class="dropdown-item reveal-text" (click)="changeLanguage('es')">Español</button></li>
+              <li><button class="dropdown-item reveal-text" (click)="changeLanguage('en')">English</button></li>
             </ul>
           </li>
         </ul>
