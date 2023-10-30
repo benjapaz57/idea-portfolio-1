@@ -1,1 +1,30 @@
-<p>form works!</p>
+<div id="formulario" class="container w-75">
+    <form class="row g-3">
+        <div class="col-md-6 fs-5">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control inputs-color" id="inputEmail4" placeholder="email@email.com">
+        </div>
+        <div class="col-6 fs-5">
+            <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control inputs-color"     id="inputNombre" placeholder="Cosme Fulanito">
+        </div>
+        <div class="col-md-6 fs-5">
+            <label for="inputMotive" class="form-label">Motivo</label>
+            <select id="inputMotive" class="form-select inputs-color">
+                <option selected>Elegir</option>
+                <option>Landing Page</option>
+                <option>Sistema Web</option>
+                <option>Community Manager</option>
+                <option>Branding</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <div class="form-floating">
+                <textarea class="form-control inputs-color" placeholder="Deja tu mensaje:" id="floatingTextarea"></textarea>
+              </div>
+        </div>
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary mb-3 inputs-button">Enviar</button>
+        </div>
+    </form>
+</div>

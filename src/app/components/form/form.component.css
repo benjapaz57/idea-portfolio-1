@@ -1,0 +1,21 @@
+#formulario{
+    background: linear-gradient(to bottom right, var(--color-3)20%, var(--color-2)95%, var(--color-1));
+    color: black;
+    font-weight: bold;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 19px 15px 19px -3px rgba(89,217,153,0.84);
+}
+.inputs-color{
+    background-color: var(--color-5);
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+}
+.inputs-color::placeholder{
+    color: var(--color-1);
+}
+.inputs-button{
+    background: linear-gradient(to bottom right, var(--color-1)20%, var(--color-2)95%, var(--color-3));
+    color: var(--color-5);
+    border: 1px transparent var(--color-5);
+}
