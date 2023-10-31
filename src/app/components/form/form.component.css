@@ -1,5 +1,5 @@
 #formulario{
-    background: linear-gradient(to bottom right, var(--color-3)20%, var(--color-2)95%, var(--color-1));
+    background: linear-gradient(to bottom, var(--color-3)20%, var(--color-2)80%);
     color: black;
     font-weight: bold;
     margin: 100px auto;
@@ -15,7 +15,11 @@
     color: var(--color-1);
 }
 .inputs-button{
-    background: linear-gradient(to bottom right, var(--color-1)20%, var(--color-2)95%, var(--color-3));
+    background: linear-gradient(to bottom, var(--color-2)20%, var(--color-3));
     color: var(--color-5);
-    border: 1px transparent var(--color-5);
+    border: 1px solid var(--color-3);
+}
+
+#contacto-header{
+    font-size: 40px;
 }

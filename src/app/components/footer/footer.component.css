@@ -1,21 +1,23 @@
 .footer-dark {
     padding:50px 0;
-    color:#f0f9ff;
-    background-color:#31ADA1;
+    color:var(--color-5);
+    background: linear-gradient(to bottom, var(--color-2)5%,
+    var(--color-3)70%,
+    var(--color-4));
   }
   
   .footer-dark h3 {
     margin-top:0;
     margin-bottom:12px;
     font-weight:bold;
-    font-size:16px;
+    font-size:26px;
   }
   
   .footer-dark ul {
     padding:0;
     list-style:none;
     line-height:1.6;
-    font-size:14px;
+    font-size:18px;
     margin-bottom:0;
   }
   
@@ -70,9 +72,9 @@
     display:inline-block;
     text-align:center;
     border-radius:50%;
-    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    box-shadow:0 0 0 1px var(--color-4);
     margin:0 8px;
-    color:#fff;
+    color:var(--color-5);
     opacity:0.75;
   }
   
