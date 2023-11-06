@@ -52,7 +52,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: linear-gradient(to bottom right, var(--color-3)10%, var(--color-2)50%, var(--color-1));
+		background: linear-gradient(60deg, var(--color-3)10%, var(--color-2)80%, var(--color-1));
 		transform: scaleX(0);
 		transform-origin: 0 50%;
 		pointer-events: none;
